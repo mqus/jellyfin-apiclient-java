@@ -39,7 +39,7 @@ jobs:
         run: ./gradlew --build-cache --no-daemon --info detekt
         continue-on-error: true
       - name: Report Detekt linter
-        uses: jwgmeligmeyling/checkstyle-github-action@v1
+        uses: jwgmeligmeyling/checkstyle-github-action@v1.2
         with:
           name: Detekt
           path: '**/detekt.xml'
