@@ -34,6 +34,7 @@ allprojects {
 	// Detekt
 	plugins.apply("io.gitlab.arturbosch.detekt")
 	detekt {
+		parallel = true
 		buildUponDefaultConfig = true
 		ignoreFailures = true
 		config = files("$rootDir/detekt.yml")
